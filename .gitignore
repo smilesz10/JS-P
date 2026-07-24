@@ -1,0 +1,7 @@
+# Ignore API key config file
+01-weather-app/config.js
+
+# OS and editor clutter
+.DS_Store
+Thumbs.db
+.vscode/
