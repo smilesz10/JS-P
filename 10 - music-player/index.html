@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <!-- Link to your favicon -->
+    <link rel="icon" type="image/svg+xml" href="asset/favicon.svg">
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for Play/Pause/Skip Icons -->
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<div class="container">
+    <div class="music-player">
+        <nav>
+            <div class="circle">
+                <i class="fa-solid fa-angle-left"></i>
+            </div>
+            <div class="circle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </nav>
+
+        <!-- Updated image path -->
+        <img src="asset/album-art.jpg" class="song-img" alt="Album Cover">
+        
+        <h1>Despacito</h1>
+        <p>Luis Fonsi ft. Daddy Yankee</p>
+
+        <!-- Updated audio path -->
+        <audio id="song">
+            <source src="asset/song.mp3" type="audio/mpeg">
+        </audio>
+
+        <!-- Audio Seek Slider -->
+        <input type="range" value="0" id="progress">
+
+        <!-- Controls -->
+        <div class="controls">
+            <div><i class="fa-solid fa-backward"></i></div>
+            <div onclick="playPause()"><i class="fa-solid fa-play" id="ctrlIcon"></i></div>
+            <div><i class="fa-solid fa-forward"></i></div>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
